@@ -40,8 +40,8 @@ Status Definitions:
 
 - Above is an example of how errors are presented in real time while running. The format for how errors are presented is: @{API ENDPOINT} {ERROR}
 - The 'Time' column shows either:
-        - The total time it took to complete the last request for this session (in ms or s), very useful to see how response times change over time.
-        - The total time it took to set an example and completely finished running it. When showing the total time it took to run, the color will be green instead of purple/blue.
+a) The total time it took to complete the last request for this session (in ms or s), very useful to see how response times change over time.
+b) The total time it took to set an example and completely finished running it. When showing the total time it took to run, the color will be green instead of purple/blue.
 
 ## License
 
