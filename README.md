@@ -28,17 +28,20 @@ Example: python musicbox-destroyer.py 20 --wait
 
 Status Definitions:
 - "Creating...": currently fetching remote UID and creating session
-- "PREPARING EXAMPLE": Setting example for current session
+- "PREPARING MODEL": Setting example for current session
 - "FAILED": Generally returned when there is a server-side or request error. Check the "Message" column for exact error info while running.
 - "RUNNING MODEL": Submitting request to server to start running the simulation
 - "WAITING": Simulation has started, waiting for message from server that it is done.
 - "DONE!!": Simulation has completely finished, once all sessions have finished then the script will exit.
 
 
-## Example output
+## More Information
 ![My Image](screenshots/errors-eg.png)
 
-Above is an example of how errors are presented in real time while running. The format for how errors are presented is: @{API ENDPOINT} {ERROR}
+- Above is an example of how errors are presented in real time while running. The format for how errors are presented is: @{API ENDPOINT} {ERROR}
+- The 'Time' column shows either:
+        - The total time it took to complete the last request for this session (in ms or s), very useful to see how response times change over time.
+        - The total time it took to set an example and completely finished running it. When showing the total time it took to run, the color will be green instead of purple/blue.
 
 ## License
 
