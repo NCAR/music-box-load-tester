@@ -1,5 +1,5 @@
 # MusicBox Load Tester
-
+![My Image](screenshots/alldone.png)
 This repo contains musicbox-destroyer.py, a script to be used to load test [Music Box Interactive](https://musicbox.acom.ucar.edu/) and run an excessive amount of simulations at once as well as simulate a DDOS or targeted attack.
 
 ## Required Packages
