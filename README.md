@@ -25,6 +25,16 @@ Example: python musicbox-destroyer.py 20 --wait
         --ddos-mode: can be run in asynchronous or synchronous mode. Once sessions are done running in this mode they'll be restarted from the beginning. This is useful for testing the server's ability to handle a large number of sessions at once (DDoS testing). To stop the script, press CTRL+C, otherwise it'll run forever. For this mode the <number of sessions> will indicate how many should run at a time, however, the script will keep creating new sessions until you stop it.
        
 ```
+
+Status Definitions:
+- "Creating...": currently fetching remote UID and creating session
+- "PREPARING EXAMPLE": Setting example for current session
+- "FAILED": Generally returned when there is a server-side or request error. Check the "Message" column for exact error info while running.
+- "RUNNING MODEL": Submitting request to server to start running the simulation
+- "WAITING": Simulation has started, waiting for message from server that it is done.
+- "DONE!!": Simulation has completely finished, once all sessions have finished then the script will exit.
+
+
 ## Example output
 ![My Image](screenshots/errors-eg.png)
 
