@@ -7,9 +7,10 @@ This repo contains musicbox-destroyer.py, a script to be used to load test [Musi
 ## Required Packages
 
 - requests
+- rich
 
 ```bash
-pip3 install requests
+pip3 install requests rich
 ```
 
 ## Usage
